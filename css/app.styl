@@ -1,0 +1,75 @@
+plomo = #F4F4F4
+plomo2 = #BEBEBE
+rojo = #B60011
+mostaza = #CAA23E
+mostazaon = #DEAA28
+body
+    margin 0
+    padding 0
+    color black
+    background white
+    font-size 16px
+    font-family 'Open Sans', sans-serif
+
+.wrap
+    display flex
+    height 100%
+
+.lateral
+    width 30%
+    padding 10em 1em
+    border-color 5px solid rgb(#000000)
+    &__header
+        margin 0 auto
+        margin-bottom 4em
+        text-align center
+        width 60%
+    &__wellcome
+        border-radius 10px
+        padding 0.3em 0
+        color white
+        background-color rojo
+        font-weight bold
+        width 100%
+        text-align center
+        box-shadow 2px 2px 5px 1px rgba(black,0.16)
+    &__form
+        width 60%
+        margin 0 auto
+    &__links
+        text-align center
+        margin 1em 0
+    &__link-crearcuenta
+        color rojo
+        margin-bottom 1em
+    &__link-olvidaste
+        color mostaza
+    a
+        text-decoration none
+
+.login__form
+	input[type="text"],input[type="password"],input[type="email"],input[type="number"]
+		border 1px solid rgb(#E6E6E6)
+		box-shadow 2px 5px 6px rgba(black,0.1)
+		font-size 1em
+		border-radius 10px
+		color rojo
+		padding 0.6em
+		margin-bottom 1em
+		width 90%
+        
+.btn
+    color white
+    border-radius 10px
+    background-color mostaza
+    width  100%
+    border 0
+    padding .5em 0
+    margin 1em 0
+    text-align center
+.btn:hover
+    background-color mostazaon
+    
+.hero
+    width 70%
+    background-color plomo
