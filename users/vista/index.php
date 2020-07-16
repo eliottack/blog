@@ -28,7 +28,7 @@
 				</form>
 				</div>
 				<div class="lateral__links">
-					<a href="./create.php" class="lateral__link-crearcuenta">Crear cuenta</a></br>
+					<a href="./signin.php" class="lateral__link-crearcuenta">Crear cuenta</a></br>
 					<a href="" class="lateral__link-olvidaste">¿Olvidaste la contraseña?</a>
 				</div>
 
