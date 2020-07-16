@@ -1,9 +1,9 @@
 <?php
 
 $dbHost = 'localhost';
-$dbName = 'pruebasn_apphouse';
-$dbUser = 'pruebasn_house';
-$dbPass = 'bq7usj786i5z';
+$dbName = 'lambdasys';
+$dbUser = 'root';
+$dbPass = '';
 
 
 try {

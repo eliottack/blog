@@ -1,5 +1,6 @@
 plomo = #F4F4F4
 plomo2 = #BEBEBE
+plomotexto = #707070
 rojo = #B60011
 mostaza = #CAA23E
 mostazaon = #DEAA28
@@ -10,6 +11,39 @@ body
     background white
     font-size 16px
     font-family 'Open Sans', sans-serif
+
+.wrapexito
+    height 800px
+    width 100%
+    display flex
+    justify-content center
+    align-items center
+    &__big
+        display flex
+        justify-content center
+        align-items  center
+    &__datos
+        text-align center
+        h1
+            color rojo
+            font-size 1.2
+            margin-bottom 0
+        h2
+            color mostaza
+            font-size 1.2
+            margin 0 0 2em 0
+        p
+            font-size 0.9em
+            color plomotexto
+    &__link
+        border-radius 20px
+        padding 0.6em 1.4em
+        color white
+        background-color rojo
+        width 100%
+        text-align center
+        box-shadow 2px 2px 5px 1px rgba(black,0.16)
+        text-decoration none
 
 .wrap
     display flex
@@ -73,3 +107,4 @@ body
 .hero
     width 70%
     background-color plomo
+
