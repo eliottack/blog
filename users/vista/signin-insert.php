@@ -85,8 +85,29 @@
 							echo "<a href='./signin.php' class='wrapexito__link'>Verifica e iniciar sesión</a>";
 						echo "</div>";
 					echo "</div>";
-				}			
+				}		
 			?>
+
+			<?php			
+				//codigo de abajo envia bien el email	
+				$message = "El siguiente mensaje es recibido desde www.grupolambda.com";
+				// make sure each line doesn't exceed 70 characters
+				$message = wordwrap($message, 70);
+				// send email
+				
+				mail($email, "Lambda validar correo",
+					"Concurso Lambda\n". 
+					"Queremos validar tu correo \n \n". 
+					"Hola " .$email."\n \n". 
+					"Para continuar con el registro, por favor ingresa \n". 
+					"a este enlace. \n \n". 
+					"http://www.eliottack.com/lambda/validate.php?id=".$idunico. " \n \n". 
+					"Si necesitas ayuda escríbenos a \n". 
+					"informes@grupolambda.com.pe \n \n". 
+
+					$message);
+				?>
+
 		</div>
 	</body>
 </html>
