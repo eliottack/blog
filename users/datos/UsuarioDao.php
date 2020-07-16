@@ -25,7 +25,7 @@ class UsuarioDao extends Conexion
      */
     public static function login($usuario)
     {
-        $query = "SELECT * FROM login_tecnicos WHERE usuario = :usuario AND password = :password";
+        $query = "SELECT * FROM login_users WHERE usuario = :usuario AND password = :password";
 
         self::getConexion();
 

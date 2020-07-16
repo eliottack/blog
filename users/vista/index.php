@@ -28,7 +28,7 @@
 					<div class="form-group">
 						<input type="password" name="txtPassword" class="form-control" required id="password" placeholder="Contraseña">
 					</div>
-					<button type="submit" class="btn btn-success">Iniciar Sesión</button>
+					<button type="submit" class="btn btn-success" style="background:#CAA23E; color:#ffffff; border:0">Iniciar Sesión</button>
 				</form>
 				</div>
 				<div class="lateral__links">
