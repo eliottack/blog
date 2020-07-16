@@ -24,22 +24,44 @@ if (isset($_SESSION["usuario"])) {
 		<link rel="stylesheet" type="text/css" href="assets/css/overhang.min.css" />
 	</head>
 	<body>
-		<div class="wrap">
-			<div class="lateral">
+		<div class="userswrap">
+			<div class="userslateral">
 				<header class="lateral__header">
 					<img src="../../images/logo.png" alt="logo lambda">
-					<div class="lateral__wellcome">Bienvenido</div>
 				</header>
-				<div class="lateral__form">
-					<h1><strong>Bienvenido</strong> <?php echo $_SESSION["usuario"]["nombre"]; ?></h1>
+				<div class="userslateral__menu">
+					<ul>
+						<li>
+							<a href="#">Tablero</a>
+						</li>
+						<li>
+							<a href="#">Mis Cursos</a>
+						</li>
+						<li>
+							<a href="#">chat</a>
+						</li>
+						<li>
+							<a href="#">Anuncios</a>
+						</li>
+						<li>
+							<a href="#">Foro</a>
+						</li>
+						<li>
+							<a href="configuraciones.php">Configuraciones</a>
+						</li>
+					</ul>
 				</div>
 				<div class="lateral__links">
-				<a href="cerrar-sesion.php" title="Cerrar sesion">Cerrar Sesion</a>
+				
 				</div>
 
 			</div>
-			<div class="hero">
-			<img src="" alt="">
+			<div class="content">
+				<div class="content__header">
+					<div>Buscar</div>
+					<div>usuario</div>
+					<div><a href="cerrar-sesion.php" title="Cerrar sesion">Cerrar Sesion</a></div>
+				</div>
 			</div>
 		</div>
 	<script src="js/main.js"></script>
