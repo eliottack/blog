@@ -55,7 +55,7 @@ class UsuarioDao extends Conexion
      */
     public static function getUsuario($usuario)
     {
-        $query = "SELECT id,nombre,email,usuario,privilegio,fecha_registro FROM login_tecnicos WHERE usuario = :usuario AND password = :password";
+        $query = "SELECT id,nombre,email,usuario,privilegio,fecha_registro FROM login_users WHERE usuario = :usuario AND password = :password";
 
         self::getConexion();
 
@@ -87,7 +87,7 @@ class UsuarioDao extends Conexion
      */
     public static function registrar($usuario)
     {
-        $query = "INSERT INTO login_tecnicos (nombre,email,usuario,password,privilegio) VALUES (:nombre,:email,:usuario,:password,:privilegio)";
+        $query = "INSERT INTO login_users (nombre,email,usuario,password,privilegio) VALUES (:nombre,:email,:usuario,:password,:privilegio)";
 
         self::getConexion();
 

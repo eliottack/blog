@@ -21,14 +21,14 @@
 				</header>
 				<div class="lateral__form">
 					<form class="login__form" id="loginForm" action="validarCode.php" method="POST" role="form">
-					<div class="form-group">
-						<input type="text" name="txtUsuario" class="form-control" id="usuario" autofocus required placeholder="Email">
-					</div>
+						<div class="form-group">
+							<input type="text" name="txtUsuario" class="form-control" id="usuario" autofocus required placeholder="Email">
+						</div>
 
-					<div class="form-group">
-						<input type="password" name="txtPassword" class="form-control" required id="password" placeholder="Contraseña">
-					</div>
-					<button type="submit" class="btn btn-success" style="background:#CAA23E; color:#ffffff; border:0">Iniciar Sesión</button>
+						<div class="form-group">
+							<input type="password" name="txtPassword" class="form-control" required id="password" placeholder="Contraseña">
+						</div>
+						<button type="submit" class="btn btn-success" style="background:#CAA23E; color:#ffffff; border:0">Iniciar Sesión</button>
 				</form>
 				</div>
 				<div class="lateral__links">
@@ -38,7 +38,7 @@
 
 			</div>
 			<div class="hero">
-			<img src="" alt="">
+				<img src="../../images/hero.jpg" class="hero__img">
 			</div>
 		</div>
 	<script src="js/main.js"></script>

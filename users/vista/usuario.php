@@ -3,7 +3,7 @@
 <head>
 	<?php session_start(); ?>
 	<meta charset="utf-8"/>
-	<title>Zona para tecnicos | apphouse</title>
+	<title>Zona alumnos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="">
 	<link href="https://fonts.googleapis.com/css?family=Anton|Zilla+Slab+Highlight" rel="stylesheet">
@@ -20,17 +20,27 @@ if (isset($_SESSION["usuario"])) {
         header("location:admin.php");
     }
 } else {
-    header("location:index.php");
+    header("location:login.php");
 }
 ?>
 
 <?php
 	// guardando variable de sesion
 	$codigo = $_SESSION["usuario"]["email"];
-	require_once '../../config.php';
+	require_once './usuariosConfig.php';
 ?>
 
 <body class="createtecnico">
+
+
+			<section class="tecnicos__anuncios">
+				<div class="container text-center">
+					<strong>Bienvenido</strong> <?php echo $_SESSION["usuario"]["email"]; ?>
+					<a href="cerrar-sesion.php" title="Cerrar sesion">Cerrar Sesion</a>
+				</div>
+			</section>
+
+	</section>
 	<script src="../../js/main.js"></script>
 </body>
 </html
