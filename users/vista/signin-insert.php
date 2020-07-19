@@ -101,7 +101,7 @@
 					"Hola " .$email."\n \n". 
 					"Para continuar con el registro, por favor ingresa \n". 
 					"a este enlace. \n \n". 
-					"http://www.eliottack.com/lambda/validate.php?id=".$idunico. " \n \n". 
+					"http://www.lambdavirtual.com/validate.php?id=".$idunico. " \n \n". 
 					"Si necesitas ayuda escríbenos a \n". 
 					"informes@grupolambda.com.pe \n \n". 
 
